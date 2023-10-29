@@ -36,11 +36,12 @@ def register_user(request):
                 usuario=usuario  # Provide the 'usuario' value here
             )
 
-            return redirect('registration_success')  # Define this URL in your app's URLs
+            return redirect('user_management:registration_success') # Define this URL in your app's URLs
     else:
         form = UserRegistrationForm()
 
     return render(request, 'user_management/register.html', {'form': form})
 
-
+def registration_success(request):
+    return render(request, 'user_management/registration_success.html')
 
