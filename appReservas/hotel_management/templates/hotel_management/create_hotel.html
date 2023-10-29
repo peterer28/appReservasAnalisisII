@@ -1,0 +1,17 @@
+<!-- hotel_management/templates/hotel_management/create_hotel.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Hotel</title>
+</head>
+<body>
+    <h1>Create Hotel</h1>
+<!-- hotel_management/templates/hotel_management/create_hotel.html -->
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create Hotel</button>
+</form>
+
+</body>
+</html>
