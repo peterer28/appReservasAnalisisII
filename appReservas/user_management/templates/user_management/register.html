@@ -1,0 +1,59 @@
+{% load custom_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <!-- Include Bootstrap CSS and JavaScript -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form method="post" action="{% url 'user_management:register' %}" class="form">
+            {% csrf_token %}
+            <div class="mb-3">
+                {{ form.nombre.label_tag }}
+                {{ form.nombre|add_css_classes:"form-control" }}
+            </div>
+            <div class="mb-3">
+                {{ form.aMaterno.label_tag }}
+                {{ form.aMaterno|add_css_classes:"form-control" }}
+            </div>
+            <div class="mb-3">
+                {{ form.aPaterno.label_tag }}
+                {{ form.aPaterno|add_css_classes:"form-control" }}
+            </div>
+            <div class="mb-3">
+                {{ form.email.label_tag }}
+                {{ form.email|add_css_classes:"form-control" }}
+            </div>
+            <div class="mb-3">
+                {{ form.phone.label_tag }}
+                {{ form.phone|add_css_classes:"form-control" }}
+            </div>
+            <div class="mb-3">
+                {{ form.tipoUsuario.label_tag }}
+                {{ form.tipoUsuario|add_css_classes:"form-control" }}
+            </div>
+            <div class="mb-3">
+                {{ form.username.label_tag }}
+                {{ form.username|add_css_classes:"form-control" }}
+            </div>
+            <div class="mb-3">
+                {{ form.password1.label_tag }}
+                {{ form.password1|add_css_classes:"form-control" }}
+            </div>
+            <div class="mb-3">
+                {{ form.password2.label_tag }}
+                {{ form.password2|add_css_classes:"form-control" }}
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
