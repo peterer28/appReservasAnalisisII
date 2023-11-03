@@ -1,2 +1,3 @@
 # appReservasAnalisisII
-proyecto de aplicaciÃ³n de reservas de espacios en establecimientos
+proyecto de aplicación de reservas de espacios en establecimientos
+# ApiReservas
