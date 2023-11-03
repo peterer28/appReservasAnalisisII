@@ -1,3 +1,4 @@
 # appReservasAnalisisII
-proyecto de aplicación de reservas de espacios en establecimientos
+proyecto de aplicaciÃ³n de reservas de espacios en establecimientos
 # ApiReservas
+se agrega api desarrollada en dotnet
